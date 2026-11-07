@@ -192,18 +192,12 @@ strong { font-weight: 600; color: var(--text); }
 
 .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; }
 .brand:hover { color: var(--text); }
-.brand-mark {
-  display: grid;
-  place-items: center;
+.brand-avatar {
+  display: block;
   width: 36px;
   height: 36px;
-  border-radius: 10px;
-  background: var(--grad);
-  color: var(--accent-ink);
-  font-family: var(--mono);
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--accent-soft), 0 4px 14px -6px rgba(129, 140, 248, 0.7);
 }
 .brand-name { font-size: 16px; letter-spacing: -0.01em; }
 
@@ -258,6 +252,23 @@ html[data-theme="light"] .ic-moon { display: none; }
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
   gap: 56px;
   align-items: center;
+}
+
+.hero-id {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px 18px;
+}
+.hero-avatar {
+  display: block;
+  flex: none;
+  width: 88px;
+  height: 88px;
+  padding: 3px;
+  border-radius: 50%;
+  background: var(--grad);
+  box-shadow: 0 14px 34px -12px rgba(129, 140, 248, 0.75);
 }
 
 .eyebrow {
@@ -821,6 +832,8 @@ html[data-theme="light"] .ic-moon { display: none; }
 
   .hero { padding: 36px 0 44px; }
   .hero h1 { margin-top: 18px; }
+  .hero-avatar { width: 68px; height: 68px; }
+  .eyebrow { font-size: 12px; padding: 5px 12px; }
   .hero-role { min-height: 3.2em; }
   .lead { font-size: 16px; }
   .hero-cta .btn { flex: 1 1 auto; }
