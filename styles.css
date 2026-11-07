@@ -301,20 +301,19 @@ html[data-theme="light"] .ic-moon { display: none; }
 
 .hero-role {
   margin-top: 16px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
   min-height: 1.6em;
+  line-height: 1.6;
   font-family: var(--mono);
   font-size: clamp(1rem, 2.2vw, 1.2rem);
   color: var(--text);
 }
-.hero-role .mono { color: var(--accent); }
+.hero-role .mono { color: var(--accent); margin-right: 8px; }
 .caret {
   display: inline-block;
   width: 2px;
   height: 1.1em;
-  margin-left: -6px;
+  margin-left: 3px;
+  vertical-align: -0.18em;
   background: var(--accent);
   animation: blink 1s steps(1) infinite;
 }
@@ -822,6 +821,7 @@ html[data-theme="light"] .ic-moon { display: none; }
 
   .hero { padding: 36px 0 44px; }
   .hero h1 { margin-top: 18px; }
+  .hero-role { min-height: 3.2em; }
   .lead { font-size: 16px; }
   .hero-cta .btn { flex: 1 1 auto; }
   .code { font-size: 12.5px; padding: 16px 16px 18px; }
