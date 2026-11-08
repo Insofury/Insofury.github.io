@@ -13,5 +13,6 @@ Built as a static site (HTML, CSS and vanilla JavaScript) and hosted on GitHub P
 - `script.js`: theme toggle, mobile menu, scroll effects
 - `Ashish_Chahar_Resume.pdf`: downloadable resume
 - `favicon.svg`: site icon
+- `projects/`: screenshots for the featured project cards (ResumeRadar and Reelora)
 
 To update the site, edit these files on GitHub (or upload new versions); GitHub Pages republishes automatically.
